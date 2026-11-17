@@ -41,7 +41,7 @@ cd Dodaily
 ./gradlew testDebugUnitTest  # schedule/streak logic tests
 ```
 
-Every push to `main` builds an APK in GitHub Actions (check the run's **Artifacts**). Pushing a tag like `v0.2.0` publishes a release with the APK attached.
+Every push to `main` builds an APK in GitHub Actions (check the run's **Artifacts**). Each push to `main` also publishes a GitHub Release for the current `versionName`. Bump it in `app/build.gradle.kts` to cut a new release.
 
 ## How it's built
 
